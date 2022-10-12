@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	corev2 "github.com/sensu/core/v2"
-	"github.com/sensu/types"
+	"github.com/sensu/sensu-go/types"
 )
 
 func init() {

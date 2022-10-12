@@ -18,6 +18,7 @@ github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSs
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/echlebek/crock v1.0.1 h1:KbzamClMIfVIkkjq/GTXf+N16KylYBpiaTitO3f1ujg=
+github.com/echlebek/crock v1.0.1/go.mod h1:/kvwHRX3ZXHj/kHWJkjXDmzzRow54EJuHtQ/PapL/HI=
 github.com/echlebek/timeproxy v1.0.0 h1:V41/v8tmmMDNMA2GrBPI45nlXb3F7+OY+nJz1BqKsCk=
 github.com/echlebek/timeproxy v1.0.0/go.mod h1:0dg2Lnb8no/jFwoMQKMTU6iAivgoMptGqSTprhnrRtk=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
@@ -71,8 +72,10 @@ github.com/robfig/cron/v3 v3.0.1/go.mod h1:eQICP3HwyT7UooqI/z+Ov+PtYAWygg1TEWWzG
 github.com/rogpeppe/fastuuid v1.2.0/go.mod h1:jVj6XXZzXRy/MSR5jhDC/2q6DgLz+nrA6LYCDYWNEvQ=
 github.com/sensu/core/v2 v2.16.0-alpha1 h1:zI7LisUz5rtVap9N/LbH6+nU9spE7FC7sEBubJd1Bek=
 github.com/sensu/core/v2 v2.16.0-alpha1/go.mod h1:vFoPc++U8m30t0fXKNGqOqHLOFr7VuqFc+Hkz+eTdmU=
-github.com/sensu/types v0.0.0-20221011154344-ab1adda7db4b h1:9SMV0k68UimEpQPPujSt6qmSTsZ0O+KnQX91/+VPLuI=
-github.com/sensu/types v0.0.0-20221011154344-ab1adda7db4b/go.mod h1:Fs65xRQpH0EdfOXKKTnc6TdyKFw4M3ZGvrWCwFnt7OE=
+github.com/sensu/core/v3 v3.8.0-alpha1 h1:n3s/LqZ2QcSndMVm864IQidRwU0Gux5z/f7O3fZUM+E=
+github.com/sensu/core/v3 v3.8.0-alpha1/go.mod h1:qzwIrR7cbbhTp6F7RaziQAEvX+8tiYZT1v9qJZFVH4k=
+github.com/sensu/sensu-go/types v0.12.0-alpha1 h1:OyqAscJD1WK0s03mA6ZKpeQQ9BwMPCP2Cp+NDv3vAb8=
+github.com/sensu/sensu-go/types v0.12.0-alpha1/go.mod h1:fHxLHZQQDpBv9ZLxvvab3w6aRXI88iJ8AqU4JQSzS0U=
 github.com/sirupsen/logrus v1.9.0 h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=
 github.com/sirupsen/logrus v1.9.0/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
