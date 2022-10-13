@@ -9,11 +9,11 @@ import (
   "sync"
 
   corev2 "github.com/sensu/core/v2"
-  "github.com/sensu/types"
+  "github.com/sensu/sensu-api-tools/apis"
 )
 
 func init() {
-	types.RegisterTypeResolver(path.Join(GroupName, Version), ResolveResource)
+	apis.RegisterResolver(path.Join(GroupName, Version), ResolveResource)
 }
 
 // typeMap is used to dynamically look up data types from strings.
@@ -34,7 +34,7 @@ func registerResource(name string, resource corev2.Resource) {
 // ResolveResource returns a zero-valued resource, given a name.
 // If the named type does not exist, or if the type is not a Resource,
 // then an error will be returned.
-func ResolveResource(name string) (corev2.Resource, error) {
+func ResolveResource(name string) (interface{}, error) {
 	typeMapMu.Lock()
 	defer typeMapMu.Unlock()
   t, ok := typeMap[name]
