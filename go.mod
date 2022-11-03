@@ -3,9 +3,9 @@ module github.com/sensu/sensu-licensing/v2
 go 1.18
 
 require (
-	github.com/sensu/core/v2 v2.16.0-alpha4
-	github.com/sensu/sensu-api-tools v0.0.0-20221013224313-f376d04d61de
-	github.com/sensu/sensu-go/types v0.12.0-alpha5
+	github.com/sensu/core/v2 v2.16.0-alpha6
+	github.com/sensu/sensu-api-tools v0.0.0-20221025205055-db03ae2f8099
+	github.com/sensu/sensu-go/types v0.12.0-alpha6
 	github.com/stretchr/testify v1.8.0
 )
 

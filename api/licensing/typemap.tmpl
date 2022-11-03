@@ -6,16 +6,16 @@ import (
   "path"
 
   corev2 "github.com/sensu/core/v2"
-  "github.com/sensu/sensu-api-tools/apis"
+  apitools "github.com/sensu/sensu-api-tools"
 )
 
 func init() {
     for alias, v := range typeMap {
             if _, ok := v.(corev2.Resource); ok {
-                apis.RegisterType(
+                apitools.RegisterType(
                     path.Join(GroupName, Version),
                     v,
-                    apis.WithAlias(alias),
+                    apitools.WithAlias(alias),
                 )
             }
     }
