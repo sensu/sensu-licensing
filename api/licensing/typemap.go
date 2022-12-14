@@ -6,13 +6,16 @@ import (
 	"path"
 	"reflect"
 
-	corev2 "github.com/sensu/core/v2"
+	corev3 "github.com/sensu/core/v3"
 	apitools "github.com/sensu/sensu-api-tools"
 )
 
 func init() {
 	for _, t := range typeMap {
-		apitools.RegisterType(path.Join(GroupName, Version), newResource(t))
+		switch t := newResource(t).(type) {
+		case corev3.Resource:
+			apitools.RegisterType(path.Join(GroupName, Version), newResource(t))
+		}
 	}
 }
 
@@ -30,6 +33,6 @@ var typeMap = map[string]interface{}{
 
 // Make a new Resource to avoid aliasing problems with ResolveResource.
 // don't use this function. no, seriously.
-func newResource(r interface{}) corev2.Resource {
-	return reflect.New(reflect.ValueOf(r).Elem().Type()).Interface().(corev2.Resource)
+func newResource(r interface{}) interface{} {
+	return reflect.New(reflect.ValueOf(r).Elem().Type()).Interface()
 }
