@@ -68,6 +68,18 @@ func (f *LicenseFile) StorePrefix() string {
 	return path.Join(apiKeyPrefix, LicenseResource)
 }
 
+func (f *LicenseFile) StoreName() string {
+	return "license_file"
+}
+
+func (f *LicenseFile) GetMetadata() *corev2.ObjectMeta {
+	return &f.ObjectMeta
+}
+
+func (f *LicenseFile) SetMetadata(meta *corev2.ObjectMeta) {
+	f.ObjectMeta = *meta
+}
+
 // URIPath returns the path component of the license
 func (f *LicenseFile) URIPath() string {
 	return LicenseURI()
