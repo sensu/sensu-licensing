@@ -164,6 +164,18 @@ func TestUnsupportedHashAlgo(t *testing.T) {
 	assert.NotNil(t, err)
 }
 
+// Test that license deserialization succeeds on supported hash algo
+func TestSupportedHashAlgo(t *testing.T) {
+	ha := HashAlgorithm(crypto.SHA256)
+
+	_, err := ha.MarshalJSON()
+	assert.Nil(t, err)
+
+	unsupportedHashAlgoJSON := []byte(`"SHA256"`)
+	err = ha.UnmarshalJSON(unsupportedHashAlgoJSON)
+	assert.Nil(t, err)
+}
+
 // Test that license signature verification fails on unsupported sig algo
 func TestUnsupportedSignatureAlgo(t *testing.T) {
 	badFile := testMockLicenseFile()

@@ -8,7 +8,7 @@ import (
 	"path"
 	"time"
 
-	corev2 "github.com/sensu/sensu-go/api/core/v2"
+	corev2 "github.com/sensu/core/v2"
 )
 
 const (
@@ -45,6 +45,14 @@ func (f *LicenseFile) GetObjectMeta() corev2.ObjectMeta {
 	return f.ObjectMeta
 }
 
+func (f *LicenseFile) GetMetadata() *corev2.ObjectMeta {
+	return &f.ObjectMeta
+}
+
+func (f *LicenseFile) SetMetadata(meta *corev2.ObjectMeta) {
+	f.ObjectMeta = *meta
+}
+
 // SetObjectMeta sets ObjectMeta to the provided metadata.
 func (f *LicenseFile) SetObjectMeta(meta corev2.ObjectMeta) {
 	// no-op
@@ -66,6 +74,10 @@ func (f *LicenseFile) SetNamespace(namespace string) {
 // StorePrefix returns the path prefix to the license in the store
 func (f *LicenseFile) StorePrefix() string {
 	return path.Join(apiKeyPrefix, LicenseResource)
+}
+
+func (f *LicenseFile) StoreName() string {
+	return "license_file"
 }
 
 // URIPath returns the path component of the license
