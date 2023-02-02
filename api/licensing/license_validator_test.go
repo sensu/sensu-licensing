@@ -114,8 +114,8 @@ func testMockLicenseFile() *LicenseFile {
 // Test that serializing and deserializing a license produces the same object.
 func TestLicenseDeserialization(t *testing.T) {
 	file := licenseFile(licensePayload())
-	file.Labels = nil
-	file.Annotations = nil
+	file.ObjectMeta.Labels = nil
+	file.ObjectMeta.Annotations = nil
 	encodedFile, err := json.Marshal(file)
 	if err != nil {
 		t.Fatal(err)

@@ -36,7 +36,7 @@ type LicenseFile struct {
 	Signature []byte `json:"signature"`
 
 	// ObjectMeta contains the name, namespace, labels and annotations
-	corev2.ObjectMeta `json:"metadata"`
+	ObjectMeta corev2.ObjectMeta `json:"metadata"`
 }
 
 // GetObjectMeta returns empty metadata because only a single license is
