@@ -77,8 +77,8 @@ github.com/sensu/core/v3 v3.8.0-alpha6 h1:ywO14aIHippeIAe2HBHrPhSdyBMs1pQtjvkYaH
 github.com/sensu/core/v3 v3.8.0-alpha6/go.mod h1:HUrsxGfeUSvd+iU5ROGgfBchv3eYjhS3Apz6XzNB8Gg=
 github.com/sensu/sensu-api-tools v0.0.0-20221025205055-db03ae2f8099 h1:FJUWcuFiTdEn2N0bGnxOaEUDCxIQqRhwERadacNCnXA=
 github.com/sensu/sensu-api-tools v0.0.0-20221025205055-db03ae2f8099/go.mod h1:SNISS4OhwNSZI9/YKTQr1bghOEwed9ZT4v+ztKk1Mq0=
-github.com/sensu/sensu-go/types v0.12.0-alpha6 h1:tPuPysl6Ew0x0u5USLeSk/3NMMt7GLJh2uO1kVFRwQY=
-github.com/sensu/sensu-go/types v0.12.0-alpha6/go.mod h1:PHk3pUJHCsFzoXnKmm9ERfnHnerzaG2rjISWGcZq3os=
+github.com/sensu/sensu-go/types v0.12.0 h1:t8gupS1QhkuA/b9LzTaF0h6DBGHX2UzKHyuBPhj/PoA=
+github.com/sensu/sensu-go/types v0.12.0/go.mod h1:PHk3pUJHCsFzoXnKmm9ERfnHnerzaG2rjISWGcZq3os=
 github.com/sirupsen/logrus v1.9.0 h1:trlNQbNUG3OdDrDil03MCb1H2o9nJ1x4/5LYw7byDE0=
 github.com/sirupsen/logrus v1.9.0/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
